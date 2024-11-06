@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+   <stylesheets>
+      <URL value="@../css/gamestyle.css" />
+   </stylesheets>
+   <children>
+      <Button layoutX="215.0" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#onStartButtonClicked" prefHeight="63.0" prefWidth="171.0" text="Start Game">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font></Button>
+      <Circle fx:id="player1Circle" fill="BLUE" layoutX="102.0" layoutY="191.0" radius="62.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="player2Circle" fill="RED" layoutX="506.0" layoutY="191.0" radius="62.0" stroke="BLACK" strokeType="INSIDE" />
+      <TextField fx:id="player1TextField" layoutX="59.0" layoutY="171.0" prefHeight="41.0" prefWidth="87.0" text="PLAYER_1" />
+      <Button layoutX="64.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#setNewPlayer1" prefHeight="25.0" prefWidth="78.0" text="Set" />
+      <Button layoutX="468.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#setNewPlayer2" prefHeight="25.0" prefWidth="78.0" text="Set" />
+      <Text fx:id="player1Score" layoutX="64.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="custom-text" text="Text" wrappingWidth="78.0" />
+      <Text fx:id="player2Score" layoutX="468.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="custom-text" text="Text" wrappingWidth="78.0" />
+      <Button fx:id="continueButton" layoutX="268.0" layoutY="253.0" mnemonicParsing="false" onMouseClicked="#onContinueButtonPressed" text="Continue" visible="false" />
+      <Button fx:id="highScoreButton" layoutX="261.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#onHighscoreButtonClicked" text="High scores" />
+      <TextField fx:id="player2TextField" layoutX="463.0" layoutY="170.0" prefHeight="41.0" prefWidth="87.0" text="PLAYER_1" />
+   </children>
+</AnchorPane>

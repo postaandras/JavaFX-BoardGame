@@ -1,0 +1,60 @@
+.root{
+    -fx-background-color: #EBE3D5;
+}
+
+
+
+
+.text-field{
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+    -fx-text-fill: #F3EEEA;
+    -fx-font-size: 20px;
+}
+
+.label{
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+    -fx-text-fill: #776B5D;
+    -fx-font-size: 26px;
+}
+
+
+.custom-text{
+    -fx-text-alignment: center;
+    -fx-background-color: transparent;
+    -fx-fill: #776B5D;
+    -fx-font-size: 24px;
+}
+
+.button{
+    -fx-background-color: #776B5D;
+    -fx-text-fill: ivory;
+}
+
+.list-view{
+    -fx-background-color: transparent;
+    -fx-border-color: #776B5D;
+
+}
+
+.list-view .list-cell:even{
+    -fx-background-color: #B0A695;
+    -fx-text-fill:  #F3EEEA;
+}
+
+.list-view .list-cell:odd{
+    -fx-background-color: #EBE3D5;
+    -fx-text-fill:  #776B5D;
+}
+
+#listOfScores .list-cell{
+    -fx-alignment: CENTER_RIGHT;
+}
+
+#board{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
